@@ -112,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Lectures/Lec2.md",
+            "file": "Lectures/Lec1.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Lectures/Lec2.md",
+            "file": "Lectures/Lec1.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -145,7 +145,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Lectures/Lec2.md",
+            "file": "Lectures/Lec1.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -162,6 +162,16 @@
           "state": {},
           "icon": "git-pull-request",
           "title": "Source Control"
+        }
+      },
+      {
+        "id": "d436819e2d47cdf2",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "calendar-with-checkmark",
+          "title": "Calendar"
         }
       }
     ],
@@ -180,8 +190,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d112f409f8f18641",
+  "active": "3a284f527c6d363f",
   "lastOpenFiles": [
-    "Lectures/Lec1.md"
+    "Untitled.md",
+    "Lectures/Lec2.md",
+    "README.md",
+    "Lectures/Lec1.md",
+    "/✏️Excalidraw/Drawing 2026-07-13 23.37.06.excalidraw.md",
+    "/Lectures/Lec2.md",
+    "/Lectures",
+    "/🗃️ files",
+    "/✏️Excalidraw",
+    "/Lectures/Lec1.md"
   ]
 }
