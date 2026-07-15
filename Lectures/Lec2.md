@@ -3,7 +3,7 @@
 - Best case
 - Avg case
 - Worst case
-![[Drawing 2026-07-13 23.24.47.excalidraw.png]]
+![[Drawing 2026-07-13 23.24.47.excalidraw]]
 
 ==O(1): العمليات الحسابية وهي اسرع اشي== 
 1. 
@@ -32,7 +32,9 @@ sout(i);
 
 ### Time Complexity Examples
 
-![[Drawing 2026-07-13 23.37.06.excalidraw.png|313]]
+![[Drawing 2026-07-13 23.37.06.excalidraw]]
+
+
 
 
 ---
