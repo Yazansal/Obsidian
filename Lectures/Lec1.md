@@ -43,7 +43,7 @@ public class Main {
         //rubber classes only!!! (Integer,String,etc...) ,int will not work  
         Box<String> b = new Box<>();  
         b.setVal("java");  
-        String s = (String) b.getVal();  
+        String s = b.getVal();  
   
     }  
 }
