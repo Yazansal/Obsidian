@@ -1,0 +1,112 @@
+import java.util.Date;
+import java.util.NoSuchElementException;
+
+public class MyLinkedList<T> {
+    Node<T> head;
+    Node<T> tail;
+    int size;
+
+    public MyLinkedList() {
+
+    }
+
+    public void addFirst(T data) {
+        Node n = new Node(data);
+        if (head == null) {
+            head = tail = n;
+        } else {
+            n.next = head;
+            head = n;
+        }
+        size++;
+    }
+
+    public void addLast(T data) {
+        Node n = new Node(data);
+        if (head == null) {
+            head = tail = n;
+        } else {
+            tail.next = n;
+            tail = n;
+        }
+        size++;
+    }
+
+    public void addByIndex(int index, T data) {
+        if (index > size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException(index);
+        }
+        Node n = new Node(data);
+        Node current2 = head;
+        Node current1 = head;
+        if(index==0&&head!=null){
+            n.next=current1;
+            head=n;
+        }
+        else if(index==0&&head==null){
+            head=n;
+        }
+        else {
+            for (int i = 0; i < index; i++) {
+                current1 = current2;
+                current2 = current2.next;
+            }
+            n.next = current2;
+            current1.next = n;
+            size++;
+        }
+    }
+
+    public T removeFirst() {
+        if (size < 1) {
+            throw new NoSuchElementException();
+        }
+        T oldValue = head.data;
+        head = head.next;
+        size--;
+        return oldValue;
+    }
+
+    public T removeLast() {
+        if (size < 1) {
+            throw new NoSuchElementException();
+        }
+        T oldValue = tail.data;
+        Node current = head;
+        for (int i = 1; i < size - 1; i++) {
+            current = current.next;
+        }
+        current.next = null;
+        tail = current;
+        size--;
+        return oldValue;
+    }
+
+    public void print() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+    }
+
+    public T removeByIndex(int index) {
+        if (index >= size || index < 0) {
+            throw new ArrayIndexOutOfBoundsException(index);
+        }
+        Node <T>current1 = head;
+        Node <T>current2 = head;
+        for (int i = 0; i < index ; i++) {
+            current1 = current2;
+            current2 = current2.next;
+        }
+        T oldValue =  current2.data;
+        current1.next = current2.next;
+        size--;
+        return oldValue;
+    }
+
+    public boolean isEmpty(){
+        return head==null;
+    }
+}
